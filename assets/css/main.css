@@ -2439,9 +2439,10 @@ h1, h2 {
 			}
 
 		.image.left {
-			float: left;
-			margin: 0 1.5em 1em 0;
-			top: 0.25em;
+            font-size: 3em;
+            float: left;
+            margin: 0 .15em 00;
+            top: -0.35em;
 		}
 
 		.image.right {
