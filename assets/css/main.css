@@ -376,6 +376,12 @@ h1, h2 {
 		border-bottom-color: rgba(144, 144, 144, 0.25);
 	}
 
+/* Helper */
+.box-shadow {
+    -webkit-box-shadow: 0px 0px 9px 2px rgba(194,194,194);
+    box-shadow: 0px 0px 9px 2px rgba(194,194,194);
+}
+
 /* Row */
 
 	.row {
@@ -2949,8 +2955,6 @@ h1, h2 {
 		-ms-flex-shrink: 0;
 		-ms-flex-negative: 0;
 		flex-shrink: 0;
-		border-style: solid;
-		border-width: 0 0 0 1px;
 		width: 33.33333%;
 	}
 
@@ -2964,9 +2968,12 @@ h1, h2 {
 		}
 
 		.sidebar > section {
-			padding: 3.5em 3.25em 1.5em 3.25em ;
-			border-top-style: solid;
-			border-top-width: 1px;
+            background-color: #fff;
+            -webkit-box-shadow: 0px 0px 9px 2px rgba(194,194,194,1);
+            box-shadow: 0px 0px 9px 2px rgba(194,194,194);
+            margin: 0 10px 10px 10px; 
+			padding: .5em 3.25em 1.5em 3.25em;
+			
 		}
 
 			.sidebar > section:first-child {
@@ -3081,6 +3088,16 @@ h1, h2 {
 	.main > section, .main > article {
 		border-color: rgba(144, 144, 144, 0.25);
 	}
+/*Main ad container */
+
+.platform-ad__container {
+    background-color: #fff; 
+    margin: 15px 0; 
+}
+
+.platform-ad__h1 {
+    font-size: 30px; 
+}
 
 /* Features */
 
@@ -3201,10 +3218,12 @@ h1, h2 {
 	}
 
 		.spotlights > article {
-			padding: 3.5em 3.25em 1.5em 3.25em ;
-			border-style: solid;
-			border-width: 1px 0 0 1px;
-			width: 50%;
+            background-color: #fff; 
+            -webkit-box-shadow: 0px 0px 9px 2px rgba(194,194,194,1);
+            box-shadow: 0px 0px 9px 2px rgba(194,194,194,1);
+            margin: 10px; 
+			/*padding: 3.5em 3.25em 1.5em 3.25em ;*/
+			width: 45%;
 		}
 
 			.spotlights > article:nth-child(odd) {
@@ -3227,38 +3246,29 @@ h1, h2 {
 						top: 0;
 						width: 200vw;
 					}
+.spotlight-content__container {
+    padding: 0.5em 3.25em 0.5em 3.25em;; 
+}
 .spotlight-heading {
     color: #292b31;
 }
-
-			@media screen and (max-width: 1280px) {
-
-				.spotlights > article {
-					padding: 2.5em 2.25em 0.5em 2.25em ;
-				}
-
-			}
 
 			@media screen and (max-width: 736px) {
 
 				.spotlights > article {
 					width: 100%;
-					border-left-width: 0;
 				}
 
 			}
 
 			@media screen and (max-width: 480px) {
 
-				.spotlights > article {
+				/*.spotlights > article {
 					padding: 2em 1.5em 0.1em 1.5em ;
-				}
+				}*/
 
 			}
 
-	.spotlights > article {
-		border-color: rgba(144, 144, 144, 0.25);
-	}
 
 /* Featured Posts */
 
@@ -3335,7 +3345,6 @@ h1, h2 {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		background-color: #fff;
 		position: relative;
 		margin: 0 auto 7em;
 		max-width: 84em;
