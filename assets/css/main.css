@@ -343,6 +343,7 @@ h1, h2 {
 }
 .spotlight-heading__h1 {
     color: #000; 
+    margin-top: 1em; 
 }
 .site-statement__h1 {
     color: #000; 
@@ -3098,8 +3099,35 @@ h1, h2 {
 
 .platform-ad__h1 {
     font-size: 30px; 
+    text-align: center;
 }
 
+.platform-ad__img-container {
+    width: 100%; 
+}
+
+.platform-ad__img {
+    width: 100%; 
+}
+
+#container-1 {
+    width: calc(80px + (100 - 80) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#container-2 {
+    width: calc(125px + (135 - 125) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#container-3 {
+    width: calc(200px + (225 - 200) * ((100vw - 300px) / (1600 - 300))); 
+}
+
+@media screen and (max-width: 480px) {
+    .platform-ad__container {
+        margin: 1em; 
+    }
+
+}
 /* Features */
 
 	.features {
