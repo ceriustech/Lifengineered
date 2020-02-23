@@ -355,7 +355,7 @@ h1, h2 {
     margin-bottom: .25em; 
 }
 .spotlight-heading__h1 {
-    background-color: #000;
+    background-color: #2b2d32;
     color: #fff; 
     font-size: 25px; 
     padding: 5px 10px;
@@ -2417,6 +2417,7 @@ h1, h2 {
     backface-visibility: hidden;
 }
 
+/*
 .platform-ad_message {
   -webkit-transition: .5s ease; 
   transition: .5s ease;
@@ -2437,6 +2438,7 @@ h1, h2 {
     padding: 12px 5px;
     width: 100px; 
 }
+*/
 
 /*
 .platform-ad:hover .platform-ad_img {
@@ -3153,7 +3155,7 @@ h1, h2 {
 }
 
 .platform-ad__h1 {
-    background-color: #000;
+    background-color: #2b2d32;
     color: #fff;
     font-size: 22px;
     margin-bottom: 35px;
@@ -3345,7 +3347,7 @@ h1, h2 {
         width: 50%; 
     }
     .spotlight-heading {
-    color: #292b31;
+    color: #2b2d32;
     font-weight: 600;
     }
 
