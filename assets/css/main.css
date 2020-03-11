@@ -354,13 +354,16 @@ h1, h2 {
 .footer-info__h3{
     margin-bottom: .25em; 
 }
+
 .spotlight-heading__h1 {
     background-color: #2b2d32;
-    color: #fff; 
-    font-size: 25px; 
-    padding: 5px 10px;
-    text-align: center; 
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 35px;
+    padding: 7px 20px;
+    text-align: left;
 }
+
 .site-statement__h1 {
     color: #000; 
 }
@@ -2410,7 +2413,7 @@ h1, h2 {
     opacity: 1;
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     -webkit-transition: .5s ease;
     transition: .5s ease;
     -webkit-backface-visibility: hidden;
@@ -2700,7 +2703,7 @@ h1, h2 {
 				-webkit-box-direction: normal;
 				flex-direction: column;
 				margin-left: 0;
-				width: 100% !important;
+				width: 50% !important;
 			}
 
 				ul.actions:not(.fixed) li {
@@ -3146,46 +3149,55 @@ h1, h2 {
 	.main > section, .main > article {
 		border-color: rgba(144, 144, 144, 0.25);
 	}
+
 /* Platform ad */
 
 .platform-ad__container {
     background-color: #fff; 
     margin: 15px 0 80px;
-    padding: 1.5em 3.25em 1.5em 3.25em !important;
+    padding: 0 !important; 
+}
+
+.platform-ad-head_container {
+    padding: 10px;
 }
 
 .platform-ad__h1 {
     background-color: #2b2d32;
     color: #fff;
-    font-size: 22px;
-    margin-bottom: 35px;
-    padding: 5px;
-    text-align: center;
+    font-size: 16px;
+    padding: 7px 20px;
+    text-align: left;
+}
+
+.platform-ad__content-container {
+    padding: 0px 10px 15px;
+    width: 100%; 
+}
+
+#platform-ad-1 {
+padding-left: 0; 
 }
 
 .platform-ad {
-    position: relative; 
-    border-right: 1px solid #000; 
+    padding: 0;  
 }
 
 .platform-ad__img-container {
     width: 100%; 
-}
-
-.platform-ad__img {
-    width: 100%; 
+    height: 100%; 
 }
 
 #container-1 {
-    width: calc(80px + (100 - 80) * ((100vw - 300px) / (1600 - 300)));
+/*    width: calc(80px + (100 - 80) * ((100vw - 300px) / (1600 - 300)));*/
 }
 
 #container-2 {
-    width: calc(125px + (135 - 125) * ((100vw - 300px) / (1600 - 300)));
+/*    width: calc(125px + (135 - 125) * ((100vw - 300px) / (1600 - 300)));*/
 }
 
 #container-3 {
-    width: calc(200px + (225 - 200) * ((100vw - 300px) / (1600 - 300))); 
+/*    width: calc(200px + (225 - 200) * ((100vw - 300px) / (1600 - 300))); */
 }
 
 @media screen and (max-width: 980px) {
@@ -3202,8 +3214,10 @@ h1, h2 {
     .border-l {
         border-left: none !important; 
     }
-    .platform-ad {
-        border-right: none; 
+    #platform-ad-2, #platform-ad-3 {
+        padding-left: 0; 
+    }
+    .platform-ad { 
         width: 100% !important; 
     }
 
@@ -3339,9 +3353,26 @@ h1, h2 {
         width: 45%
         
     }
+.spotlight-content_img-link {
+    position: relative; 
+}
     .spotlight-content_img {
     width: 100%; 
     }
+.spotlight-tag_container {
+    background: #a838b5;
+    width: 30%;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+.spotlight-tag_h {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    padding: 7px;
+    text-align: center;
+}
     .spotlight-content__container {
         padding: 0.5em .25em 0.5em 2.25em;
         width: 50%; 
@@ -3427,13 +3458,14 @@ h1, h2 {
 .posts-right__header {
     background-color: #000; 
     color: #fff;
-    font-size: 1.25em;
-    padding: 5px; 
-    text-align: center
+    font-size: 16px;
+    padding: 5px 20px; 
+    text-align: left;
 }
+
 .right-post__heading {
     color: #292b31;
-    font-size: 1.5em;
+    font-size: 20px;
 }
 
 		.posts > li {
@@ -4724,6 +4756,20 @@ h1, h2 {
 					background-color: #ffffff;
 				}
 
+.inner-tag_container {
+    background: #a838b5;
+    width: 25%;
+}
+
+.inner-tag_h {
+    color: #fff !important;
+    font-size: 14px;
+    margin: 0;
+    padding: 7px;
+    text-align: center;
+}
+
+
 		body.is-preload #banner > article:before {
 			opacity: 1;
 		}
@@ -4747,7 +4793,6 @@ h1, h2 {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				text-align: center;
 				height: 35em;
 			}
 
@@ -4761,8 +4806,6 @@ h1, h2 {
 					-ms-justify-content: center;
 					-webkit-box-pack: center;
 					-ms-flex-pack: center;
-					justify-content: center;
-					width: 100%;
 					margin-left: 0;
 				}
 
@@ -4789,6 +4832,10 @@ h1, h2 {
 				#banner > article .inner {
 					padding: 2em 2em 0.1em 2em ;
 				}
+            
+            .inner-tag_container {
+                width: 33%;
+            }
 
 		}
 

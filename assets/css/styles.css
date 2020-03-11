@@ -2369,38 +2369,6 @@ input, select, textarea {
 		color: #aaa !important;
 	}
 
-/* Hover Effects */
-.platform-ad_img {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.platform-ad_message {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.platform-ad_message-p {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-}
-
 /* Icon */
 
 	.icon {
