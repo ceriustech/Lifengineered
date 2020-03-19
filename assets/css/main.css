@@ -3366,6 +3366,12 @@ padding-left: 0;
     bottom: 1em;
     left: 1em;
 }
+.spotlight-badge_container {
+    background: #a838b5;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
 .spotlight-tag_h {
     color: #fff;
     font-size: 14px;
@@ -4567,7 +4573,18 @@ padding-left: 0;
 		height: 30em;
 		cursor: default;
 	}
-
+.lifestyle-banner {
+    height: 15em !important; 
+}
+.technology-banner {
+    height: 15em !important; 
+}
+.entreprenuership-banner {
+    height: 15em !important; 
+}
+.health-banner {
+    height: 15em !important; 
+}
 		#banner input, #banner select, #banner textarea {
 			color: #ffffff;
 		}
