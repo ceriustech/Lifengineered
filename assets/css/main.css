@@ -109,7 +109,6 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
 		overflow-x: hidden;
 	}
 
@@ -123,7 +122,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #f5f5f5;
+		background-color: #e7eaea;
 		color: #56585c;
 	}
 
@@ -4615,15 +4614,19 @@ padding-left: 0;
 }
 .lifestyle-banner {
     height: 15em !important; 
+    margin-bottom: 2em;
 }
 .technology-banner {
     height: 15em !important; 
+    margin-bottom: 2em;
 }
 .entreprenuership-banner {
     height: 15em !important; 
+    margin-bottom: 2em;
 }
 .health-banner {
     height: 15em !important; 
+    margin-bottom: 2em;
 }
 		#banner input, #banner select, #banner textarea {
 			color: #ffffff;
