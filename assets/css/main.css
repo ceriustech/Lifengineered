@@ -80,6 +80,10 @@ input, select, textarea {
 .centered-img {
     margin: 0 auto; 
 }
+
+.margin-0 {
+    margin: 0 !important;
+}
 /* Basic */
 
 	@-ms-viewport {
