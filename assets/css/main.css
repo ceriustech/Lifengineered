@@ -3159,7 +3159,7 @@ h1, h2 {
 .platform-ad__container {
     background-color: #fff; 
     margin: 15px 0 80px;
-    padding: 0 !important; 
+    padding: 0 0 10px 0 !important; 
 }
 
 .platform-ad-head_container {
