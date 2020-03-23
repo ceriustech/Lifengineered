@@ -4145,9 +4145,8 @@ padding-left: 0;
         font-size: 1.15em;
 		height: 100%;
 		line-height: 5em;
-        margin: 0 auto;
         max-width: 84em;
-        width: 82%;
+        width: 100%;
 		cursor: default;
 	}
 
@@ -4469,6 +4468,9 @@ padding-left: 0;
 		}
 
 /* Nav Panel */
+#nav-wrapper {
+    height: 100%;
+}
 
 	#navPanel {
 		-webkit-transform: translateX(100%);
