@@ -3379,15 +3379,16 @@ padding-left: 0;
         padding: 10px; 
     }
     .spotlight-content_img-container {
-        width: 45%
-        
+        width: 45%;  
     }
+
 .spotlight-content_img-link {
     position: relative; 
 }
-    .spotlight-content_img {
+.spotlight-content_img {
     width: 100%; 
-    }
+}
+
 .spotlight-tag_container {
     background: #a838b5;
     width: 30%;
