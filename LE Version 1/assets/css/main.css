@@ -3199,7 +3199,21 @@ h1, h2 {
     font-weight: bold;
     padding: 7px 0 0 15px;
     margin: 0;
+    text-decoration: underline;
 }
+
+.platform-ad_cta-p {
+    border: 2px solid #a838b5; 
+    font-size: 1em;
+    line-height: 1.2;
+    margin-top: 1em !important; 
+    padding: .5em; 
+}
+
+.platform-ad_cta-p span {
+
+}
+
     #pointer {
       width: 165px;
       height: 40px;
@@ -3329,9 +3343,9 @@ h1, h2 {
 
 .codingphase a:before,
 .codingphase a:after {
-  background-image: url(/images/coding-phase-icon.png);
+  background-image: url(/images/coding-phase-icon-4.png);
   background-repeat: no-repeat;
-  background-size: 100px;
+  background-size: 60px;
   background-position: 50% 50%;
   content: "";
   display: block;
@@ -3343,9 +3357,9 @@ h1, h2 {
 
 .frontend-masters a:before,
 .frontend-masters a:after{
-  background-image: url("https://image.winudf.com/v2/image1/Y29tLnVkZW15LmFuZHJvaWQudWZnX2ljb25fMTU1NDU1MzYwM18wMzQ/icon.png?w=170&fakeurl=1");
+  background-image: url("/images/frontend-masters-icon-2.png");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 50px;
   background-position: 50% 50%;
   content: "";
 }
@@ -3356,9 +3370,9 @@ h1, h2 {
 
 .leetcode a:before,
 .leetcode a:after {
-  background-image: url("https://image.winudf.com/v2/image1/Y29tLnVkZW15LmFuZHJvaWQudWZnX2ljb25fMTU1NDU1MzYwM18wMzQ/icon.png?w=170&fakeurl=1");
+  background-image: url("/images/leetcode-icon.png");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 90px;
   background-position: 50% 50%;
   content: "";
 }
@@ -3367,9 +3381,10 @@ h1, h2 {
   background-color: #ea5252;
 }
 
+/*
 .hacker-rank a:before,
 .hacker-rank a:after {
-  background-image: url("https://image.winudf.com/v2/image1/Y29tLnVkZW15LmFuZHJvaWQudWZnX2ljb25fMTU1NDU1MzYwM18wMzQ/icon.png?w=170&fakeurl=1");
+  background-image: url("/images/leetcode-icon.png");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: 50% 50%;
@@ -3379,12 +3394,13 @@ h1, h2 {
 .hacker-rank a:after{ 
   background-color: #ea5252;
 }
+*/
 
 .free-code-camp a:before,
 .free-code-camp a:after {
-  background-image: url("https://image.winudf.com/v2/image1/Y29tLnVkZW15LmFuZHJvaWQudWZnX2ljb25fMTU1NDU1MzYwM18wMzQ/icon.png?w=170&fakeurl=1");
+  background-image: url("/images/freecode-camp-icon.jpg");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 50px;
   background-position: 50% 50%;
   content: "";
 }

@@ -187,4 +187,4 @@ footer.innerHTML = footerHTML;
 })();
 
 
- document.querySelector('.spotlight-content_img').src = "images/choices-lifestyle.jpg";
+
