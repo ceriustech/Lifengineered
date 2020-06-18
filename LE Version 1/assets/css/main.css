@@ -2283,7 +2283,7 @@ h1, h2 {
 				font-weight: 900;
 			}
 
-			input[type="checkbox"] + label:before,
+			/* input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
 				border-radius: 0;
 				border: solid 1px;
@@ -2297,7 +2297,7 @@ h1, h2 {
 				top: 0;
 				width: 1.65em;
 				font-size: 0.8em;
-			}
+			} */
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
@@ -2408,10 +2408,22 @@ h1, h2 {
 	}
 
 /* Platform Ad Contrainer Styles */
+.platform-ad_img-container {
+	width: 2.75em;
+    position: absolute;
+    top: .25em;
+    left: 0.4em;
+}
+
+.platform-ad_img {
+	width: 100%;
+}
+
 .platform-content-h1 {
-	margin: 0;
-	line-height: 2;
-	text-align: center;
+	font-weight: 600;
+	line-height: 1;
+	margin: 0 0 .45em 0;
+	text-align: left;
   }
   
   /* h2 {
@@ -2446,13 +2458,15 @@ h1, h2 {
 	width: 100%;
 	color: white;
 	overflow: hidden;
+	position: relative;
   }
   .platform-label {
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-pack: justify;
 	justify-content: space-between;
-	padding: 1em;
+	padding: 1em 1em 1em 4em;
+	height: 56px;
 	font-weight: bold;
 	cursor: pointer;
 	/* Icon */
@@ -2469,44 +2483,70 @@ h1, h2 {
   .platform-content {
 	max-height: 0;
 	padding: 0 1em;
-	color: #2c3e50;
 	background: white;
 	-webkit-transition: all .35s;
 	transition: all .35s;
   }
   
   .platform-content-p {
-	margin: 0; 
+	  color: #56585c;
+	  margin: 0; 
   }
   
-  .platform-content-h1 {
-	text-align: left; 
-  }
-  
-  input:checked + .platform-label::after {
-	-webkit-transform: rotate(90deg);
+  .platform-input:checked + .platform-label::after {
+	-webkit-transform: rotate(90deg); 
 			transform: rotate(90deg);
   }
+
   input:checked ~ .platform-content {
 	max-height: 100vh;
 	padding: 1em;
   }
   
+  .platform-1-h {
+	color: #EA5252;
+	font-size: 1.65em;
+  }
+
   .label-1 {
 	background-color: #EA5252;
   }
-  
+
+  .platform-2-h {
+	color: #8B4A9D;
+	font-size: 1.65em;
+}
+
   .label-2 {
 	background-color: #8B4A9D;
+  }
+
+  .platform-3-h {
+	color: #C53029;
+	font-size: 1.65em;
+}
+
+  #platform-img-3 {
+	  top: .5em;
   }
   
   .label-3 {
 	background-color: #C53029;
   }
+
+  .platform-4-h {
+	color: #FEA116;
+	font-size: 1.65em;
+}
   
   .label-4 {
 	background-color: #FEA116;
   }
+
+  .platform-5-h {
+	color: #306203;
+	font-size: 1.65em;
+}
   
   .label-5 {
 	background-color: #306203;
