@@ -2170,12 +2170,12 @@ h1, h2 {
 		margin: 0 0 2em 0;
 	}
 
-	label {
+	/* label {
 		display: block;
 		font-size: 0.9em;
 		font-weight: 600;
 		margin: 0 0 1em 0;
-	}
+	} */
 
 	input[type="text"],
 	input[type="password"],
@@ -2257,7 +2257,7 @@ h1, h2 {
 		z-index: -1;
 	}
 
-		input[type="checkbox"] + label,
+		/* input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
 			cursor: pointer;
@@ -2267,7 +2267,7 @@ h1, h2 {
 			padding-left: 2.4em;
 			padding-right: 0.75em;
 			position: relative;
-		}
+		} */
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
@@ -2328,10 +2328,6 @@ h1, h2 {
 		opacity: 1.0;
 	}
 
-	label {
-		color: #666;
-	}
-
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
@@ -2366,16 +2362,16 @@ h1, h2 {
 			background: #fff;
 		}
 
-	input[type="checkbox"] + label,
+	/* input[type="checkbox"] + label,
 	input[type="radio"] + label {
 		color: #888;
-	}
+	} */
 
-		input[type="checkbox"] + label:before,
+		/* input[type="checkbox"] + label:before,
 		input[type="radio"] + label:before {
 			background: rgba(144, 144, 144, 0.075);
 			border-color: rgba(144, 144, 144, 0.25);
-		}
+		} */
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
@@ -2411,50 +2407,110 @@ h1, h2 {
 		color: #aaa !important;
 	}
 
-/* Hover Effects TOp Rated Platforms */
-.platform-ad_img {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-/*
-.platform-ad_message {
-  -webkit-transition: .5s ease; 
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.platform-ad_message-p {
-    background-color: #a838b5;
-    color: white;
-    font-size: 16px;
-    padding: 12px 5px;
-    width: 100px; 
-}
-*/
-
-/*
-.platform-ad:hover .platform-ad_img {
-  opacity: 0.3;
-}
-
-.platform-ad:hover .platform-ad_message {
-  opacity: 1;
-}
-*/
+/* Platform Ad Contrainer Styles */
+.platform-content-h1 {
+	margin: 0;
+	line-height: 2;
+	text-align: center;
+  }
+  
+  /* h2 {
+	margin: 0 0 .5em;
+	font-weight: normal;
+  } */
+  
+  .platform-ad-input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+  }
+  
+  .platform-ad-row {
+	display: -webkit-box;
+  }
+  .platform-ad-row .col {
+	-webkit-box-flex: 1;
+			flex: 1;
+  }
+  /* .platform-ad-row .col:last-child {
+	margin-left: 1em;
+  } */
+  
+  /* Accordion styles */
+  .tabs {
+	overflow: hidden;
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .tab {
+	width: 100%;
+	color: white;
+	overflow: hidden;
+  }
+  .platform-label {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	padding: 1em;
+	font-weight: bold;
+	cursor: pointer;
+	/* Icon */
+  }
+  
+  .platform-label::after {
+	content: "\276F";
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	-webkit-transition: all .35s;
+	transition: all .35s;
+  }
+  .platform-content {
+	max-height: 0;
+	padding: 0 1em;
+	color: #2c3e50;
+	background: white;
+	-webkit-transition: all .35s;
+	transition: all .35s;
+  }
+  
+  .platform-content-p {
+	margin: 0; 
+  }
+  
+  .platform-content-h1 {
+	text-align: left; 
+  }
+  
+  input:checked + .platform-label::after {
+	-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+  }
+  input:checked ~ .platform-content {
+	max-height: 100vh;
+	padding: 1em;
+  }
+  
+  .label-1 {
+	background-color: #EA5252;
+  }
+  
+  .label-2 {
+	background-color: #8B4A9D;
+  }
+  
+  .label-3 {
+	background-color: #C53029;
+  }
+  
+  .label-4 {
+	background-color: #FEA116;
+  }
+  
+  .label-5 {
+	background-color: #306203;
+  }
 
 /* Icon */
 
