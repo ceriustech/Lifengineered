@@ -42,46 +42,6 @@ var settings = {
       isLocked = false,
       i = 0;
 
-    // Turn off indicators if we only have one slide.
-    // if ($slides.length == 1) options.indicators = false;
-
-    // Functions.
-    // $this._switchTo = function (x, stop) {
-    //   if (isLocked || pos == x) return;
-
-    //   isLocked = true;
-
-    //   if (stop) window.clearInterval(intervalId);
-
-    //   // Update positions.
-    //   lastPos = pos;
-    //   pos = x;
-
-    //   // Hide last slide.
-    //   slides[lastPos].removeClass("top");
-
-    //   if (options.indicators) indicators[lastPos].removeClass("visible");
-
-    //   // Show new slide.
-    //   slides[pos].addClass("visible").addClass("top");
-
-    //   if (options.indicators) indicators[pos].addClass("visible");
-
-    //   // Finish hiding last slide after a short delay.
-    //   window.setTimeout(function () {
-    //     slides[lastPos].addClass("instant").removeClass("visible");
-
-    //     window.setTimeout(function () {
-    //       slides[lastPos].removeClass("instant");
-    //       isLocked = false;
-    //     }, 100);
-    //   }, options.speed);
-    // };
-
-    // Indicators.
-    // if (options.indicators)
-    //   $indicators = $('<ul class="indicators"></ul>').appendTo($this);
-
     // Slides.
     $slides.each(function () {
       var $slide = $(this),
