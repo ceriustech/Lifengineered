@@ -1,10 +1,10 @@
 // This function loads the Nav bar across the site
 const navPlacementFunc = (() => {
-    let navBar = document.getElementById('navigation'); 
-console.log(navBar);
-    let navHTML; 
+  let navBar = document.getElementById("navigation");
+  console.log(navBar);
+  let navHTML;
 
-let nav = ` <div id="nav-wrapper" class="wrapper">
+  let nav = ` <div id="nav-wrapper" class="wrapper">
             <header id="header">
 				<!-- Logo -->
 					<span class="logo">
@@ -18,6 +18,20 @@ let nav = ` <div id="nav-wrapper" class="wrapper">
 							<li class="header-nav_li"><a href="lifestyle.html" class="header-nav_a">Lifestyle</a></li>
 							<li class="header-nav_li">
 								<a href="technology.html" class="nav-tem header-nav_a">Technology</a>
+								<!--<ul class="header-nav_sub-menu">
+								<li><a href="#">Option One</a></li>
+								<li><a href="#">Option Two</a></li>
+								<li><a href="#">Option Three</a></li>
+								<li>
+									<a href="#">Submenu</a>
+									<ul>
+										<li><a href="#">Option One</a></li>
+										<li><a href="#">Option Two</a></li>
+										<li><a href="#">Option Three</a></li>
+										<li><a href="#">Option Four</a></li>
+									</ul>
+								</li>
+								</ul>-->
 							</li>
 							<li class="header-nav_li"><a href="entrepreneurship.html" class="header-nav_a">Entrepreneurship </a></li>
 							<li class="header-nav_li"><a href="health.html" class="header-nav_a">Health</a></li>
@@ -28,7 +42,7 @@ let nav = ` <div id="nav-wrapper" class="wrapper">
 			</header>
         </div>`;
 
-let articleNav = `<div id="nav-wrapper" class="wrapper">
+  let articleNav = `<div id="nav-wrapper" class="wrapper">
 		        <header id="header">
 				<!-- Logo -->
 					<span class="logo">
@@ -52,24 +66,24 @@ let articleNav = `<div id="nav-wrapper" class="wrapper">
 			</header>
             </div>`;
 
-if(window.location.href.includes("articles")) {
+  if (window.location.href.includes("articles")) {
     navHTML = articleNav;
-}else {
-    navHTML = nav; 
-}
+  } else {
+    navHTML = nav;
+  }
 
-navBar.innerHTML = navHTML; 
-})(); 
+  navBar.innerHTML = navHTML;
+})();
 
 // This function will load the footer accross the site
 
 const footerPlacementFunc = (() => {
-    let footer = document.getElementById('footer');
-    console.log(footer);
-    
-    let footerHTML; 
-    
-    let footerEl = `<div class="inner">
+  let footer = document.getElementById("footer");
+  console.log(footer);
+
+  let footerHTML;
+
+  let footerEl = `<div class="inner">
 					<section class="info">
 					    <div class="footer-info__heading">
 					       <h3 class="logo footer-info__h3">Lif<span class="logo-txt-color">E</span>ngineered</h3> 
@@ -122,8 +136,8 @@ const footerPlacementFunc = (() => {
 				<div class="copyright">
 					&copy; LifEngineered. ©2019 LimbleMedia. All rights reserved.
 				</div>`;
-    
-    let articleFooter = `<div class="inner">
+
+  let articleFooter = `<div class="inner">
 					<section class="info">
 					    <div class="footer-info__heading">
 					       <h3 class="logo footer-info__h3">Lif<span class="logo-txt-color">E</span>ngineered</h3> 
@@ -176,15 +190,12 @@ const footerPlacementFunc = (() => {
 				<div class="copyright">
 					&copy; LifEngineered. ©2019 LimbleMedia. All rights reserved.
 				</div>`;
-    
-if(window.location.href.includes("articles")) {
+
+  if (window.location.href.includes("articles")) {
     footerHTML = articleFooter;
-}else {
-    footerHTML = footerEl; 
-}
+  } else {
+    footerHTML = footerEl;
+  }
 
-footer.innerHTML = footerHTML; 
+  footer.innerHTML = footerHTML;
 })();
-
-
-
